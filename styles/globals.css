@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.submenu:hover .submenu-context {
+  display: flex;
+}

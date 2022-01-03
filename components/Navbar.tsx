@@ -26,13 +26,13 @@ function Navbar() {
             role="navigation"
             className="flex gap-3 pl-1 text-sm font-bold tracking-wide uppercase list-none sm:text-lg sm:gap-6"
           >
-            <li role="button" tabIndex={1} className="hover:text-hover ">
+            <li role="button" tabIndex={1} className="hover:text-accent ">
               About us
             </li>
-            <li role="button" tabIndex={2} className="hover:text-hover">
+            <li role="button" tabIndex={2} className="hover:text-accent">
               Careers
             </li>
-            <li role="button" tabIndex={3} className="hover:text-hover">
+            <li role="button" tabIndex={3} className="hover:text-accent">
               Contact us
             </li>
           </ul>

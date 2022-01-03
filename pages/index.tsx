@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
+import Navlist from '../components/Navlist';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <div className="container max-w-6xl mx-auto">
         <Navbar />
         <Banner />
+        <Navlist />
       </div>
     </div>
   );
