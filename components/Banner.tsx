@@ -5,13 +5,7 @@ function Banner() {
     <div className="flex">
       {/* Medium screens logo  */}
       <div className="relative hidden sm:w-32 sm:block ">
-        <Image
-          src="/images/ogp-logo.png"
-          layout="fill"
-          width="512"
-          height="614"
-          alt="logo"
-        />
+        <Image src="/images/ogp-logo.png" layout="fill" alt="logo" />
       </div>
       {/* Animated branding */}
       <div className="relative flex-grow md:w-32 ">

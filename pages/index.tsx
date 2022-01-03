@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -6,6 +7,11 @@ import Navbar from '../components/Navbar';
 import Navlist from '../components/Navlist';
 
 const Home: NextPage = () => {
+  const [showMenu, SetShowMenu] = useState(false);
+  const handleMenuClick = (state?: boolean) => {
+    console.log('passed state?', state);
+    state !== undefined ? SetShowMenu(state) : SetShowMenu(!showMenu);
+  };
   return (
     <div>
       <Head>
@@ -19,9 +25,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container max-w-6xl mx-auto">
-        <Navbar />
+        <Navbar toggleMenu={handleMenuClick} />
         <Banner />
-        <Navlist />
+        <Navlist hideMenu={handleMenuClick} showMenu={showMenu} />
       </div>
     </div>
   );
