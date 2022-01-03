@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.submenu:hover .submenu-context {
-  display: flex;
+@media only screen and (min-width: 768px) {
+  .submenu:hover .submenu-context {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hidemenu {
+    display: none;
+  }
 }
