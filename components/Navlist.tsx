@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 interface props {
   showMenu: boolean;
@@ -10,15 +10,15 @@ const Navlist: FC<props> = ({ showMenu, hideMenu }) => {
     `md:px-4 border-r-2 hover:border-r-accent hover:text-accent cursor-pointer`;
   return (
     <div>
-      <div className={`mt-6 ${showMenu ? '' : 'hidemenu'}`}>
-        <ul className="flex flex-col w-auto gap-4 pl-6 font-bold uppercase border-2 md:pl-0 md:text-xs lg:text-base md:flex-row md:gap-0 md:justify-start md:border-0 ">
+      <div className={`mt-6 ${showMenu ? "" : "hidemenu"}`}>
+        <ul className="flex flex-col w-auto gap-4 pl-6 font-bold uppercase md:pl-0 md:text-xs lg:text-base md:flex-row md:gap-0 md:justify-start md:border-0 ">
           <li onClick={() => hideMenu()} className={navItemSharedStyle()}>
             Home
           </li>
 
           <li className={`${navItemSharedStyle()} relative submenu`}>
             The Directory
-            <ul className="left-0 pl-4 text-black bg-white md:hidden md:border-2 md:absolute md:w-60 top-5 submenu-context">
+            <ul className="left-0 z-30 pl-4 text-black bg-white md:shadow-md md:hidden md:border-2 md:absolute md:w-60 top-5 submenu-context">
               <li
                 onClick={() => hideMenu()}
                 className="pt-3 pb-1 md:pb-2 hover:text-accent"
