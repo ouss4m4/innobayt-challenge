@@ -2,10 +2,10 @@ import React from 'react';
 
 function Navlist() {
   const navItemSharedStyle = () =>
-    `px-4 border-r-2 border-r-accent hover:text-accent cursor-pointer `;
+    `md:px-4  border-r-2 hover:border-r-accent hover:text-accent cursor-pointer `;
   return (
     <div className="mt-6">
-      <ul className="flex justify-start font-bold uppercase">
+      <ul className="w-auto font-bold uppercase border-2 md:text-xs lg:text-base md:flex md:justify-start md:border-0">
         <li className={navItemSharedStyle()}>Home</li>
 
         <li className={`${navItemSharedStyle()} relative submenu`}>
