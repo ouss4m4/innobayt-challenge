@@ -5,11 +5,11 @@ import Image from 'next/image';
 import Banner from '../components/Banner';
 import Navbar from '../components/Navbar';
 import Navlist from '../components/Navlist';
+import { Carousel } from '../components/Carousel';
 
 const Home: NextPage = () => {
   const [showMenu, SetShowMenu] = useState(false);
   const handleMenuClick = (state?: boolean) => {
-    console.log('passed state?', state);
     state !== undefined ? SetShowMenu(state) : SetShowMenu(!showMenu);
   };
   return (
@@ -28,6 +28,7 @@ const Home: NextPage = () => {
         <Navbar toggleMenu={handleMenuClick} />
         <Banner />
         <Navlist hideMenu={handleMenuClick} showMenu={showMenu} />
+        <Carousel />
       </div>
     </div>
   );
