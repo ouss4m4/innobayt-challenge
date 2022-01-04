@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import Navlist from '../components/Navlist';
 import { Carousel } from '../components/Carousel';
 import Contact from '../components/Contact';
+import Share from '../components/Share';
 
 const Home: NextPage = () => {
   const [showMenu, SetShowMenu] = useState(false);
@@ -25,6 +26,8 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Share />
+
       <div className="container max-w-6xl mx-auto">
         <Navbar toggleMenu={handleMenuClick} />
         <Banner />

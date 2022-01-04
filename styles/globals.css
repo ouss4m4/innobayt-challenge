@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media only screen and (min-width: 768px) {
-  .submenu:hover .submenu-context {
-    display: block;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .hidemenu {
-    display: none;
-  }
-}
-
 .embla {
   overflow: hidden;
 }
@@ -22,4 +11,26 @@
 .embla__slide {
   position: relative;
   flex: 0 0 100%;
+}
+
+.socialbuttons {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+/* medium screens and larger */
+@media only screen and (min-width: 768px) {
+  .submenu:hover .submenu-context {
+    display: block;
+  }
+}
+/* smaller than medium md: */
+@media only screen and (max-width: 768px) {
+  .hidemenu {
+    display: none;
+  }
 }
