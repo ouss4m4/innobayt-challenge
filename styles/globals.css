@@ -18,9 +18,24 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
-  position: absolute;
   bottom: 0;
-  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* only large screens */
+@media only screen and (min-width: 1280px) {
+  .socialbuttons {
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    bottom: 50vh;
+    z-index: 100000;
+    justify-content: start;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+  }
 }
 /* medium screens and larger */
 @media only screen and (min-width: 768px) {

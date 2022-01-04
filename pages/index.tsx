@@ -26,7 +26,6 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Share />
 
       <div className="container max-w-6xl mx-auto">
         <Navbar toggleMenu={handleMenuClick} />
@@ -40,6 +39,7 @@ const Home: NextPage = () => {
           <Contact />
         </div>
       </div>
+      <Share />
     </div>
   );
 };

@@ -11,16 +11,16 @@ import {
 function Share() {
   return (
     <div className="socialbuttons">
-      <div className="w-14 h-14">
+      <div className="w-14 h-14" role="button">
         <AiFillFacebook className="w-16 h-16 " style={{ color: '#3b5998' }} />
       </div>
-      <div className="w-14 h-14">
+      <div className="w-14 h-14" role="button">
         <AiFillGooglePlusSquare
           className="w-16 h-16 "
           style={{ color: '#dd4b39' }}
         />
       </div>
-      <div className="w-14 h-14">
+      <div className="w-14 h-14" role="button">
         <AiFillLinkedin className="w-16 h-16 " style={{ color: '#007bb5' }} />
       </div>
     </div>
