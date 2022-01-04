@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Banner from "../components/Banner";
-import Navbar from "../components/Navbar";
-import Navlist from "../components/Navlist";
-import { Carousel } from "../components/Carousel";
-import Contact from "../components/Contact";
+import React, { useState } from 'react';
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import Banner from '../components/Banner';
+import Navbar from '../components/Navbar';
+import Navlist from '../components/Navlist';
+import { Carousel } from '../components/Carousel';
+import Contact from '../components/Contact';
 
 const Home: NextPage = () => {
   const [showMenu, SetShowMenu] = useState(false);
@@ -30,8 +30,12 @@ const Home: NextPage = () => {
         <Banner />
         <Navlist hideMenu={handleMenuClick} showMenu={showMenu} />
         <hr />
-        <Carousel />
-        <Contact />
+        <div className="flex flex-col-reverse gap-4 mt-8 md:mt-0 md:flex-col md:gap-0">
+          <div className="flex-grow">
+            <Carousel />
+          </div>
+          <Contact />
+        </div>
       </div>
     </div>
   );

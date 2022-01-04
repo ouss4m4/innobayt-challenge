@@ -32,7 +32,7 @@ const Navbar: FC<props> = ({ toggleMenu }) => {
             role="navigation"
             className="flex gap-3 pl-1 text-sm font-bold tracking-wide uppercase list-none md:text-lg md:gap-6"
           >
-            <li role="button" tabIndex={1} className="hover:text-accent ">
+            <li role="button" tabIndex={1} className="-ml-1 hover:text-accent">
               About us
             </li>
             <li role="button" tabIndex={2} className="hover:text-accent">

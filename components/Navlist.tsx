@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
 interface props {
   showMenu: boolean;
@@ -10,9 +10,12 @@ const Navlist: FC<props> = ({ showMenu, hideMenu }) => {
     `md:px-4 border-r-2 hover:border-r-accent hover:text-accent cursor-pointer`;
   return (
     <div>
-      <div className={`mt-6 ${showMenu ? "" : "hidemenu"}`}>
-        <ul className="flex flex-col w-auto gap-4 pl-6 font-bold uppercase md:pl-0 md:text-xs lg:text-base md:flex-row md:gap-0 md:justify-start md:border-0 ">
-          <li onClick={() => hideMenu()} className={navItemSharedStyle()}>
+      <div className={`mt-6 ${showMenu ? '' : 'hidemenu'}`}>
+        <ul className="flex flex-col w-auto gap-4 pl-6 font-bold uppercase md:pl-0 md:text-xs lg:text-base md:flex-row md:gap-0 md:justify-start ">
+          <li
+            onClick={() => hideMenu()}
+            className={`${navItemSharedStyle()} lg:-ml-2`}
+          >
             Home
           </li>
 

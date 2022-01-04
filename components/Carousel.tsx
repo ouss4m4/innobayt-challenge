@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
+import React, { useEffect } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay';
+import Image from 'next/image';
 
 export const Carousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
@@ -11,7 +11,7 @@ export const Carousel = () => {
     }
   }, [emblaApi]);
   return (
-    <div className="mx-auto mt-8">
+    <div className="flex-grow mx-auto mt-8">
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
           <div className="embla__slide">
